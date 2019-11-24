@@ -16,11 +16,11 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: restore
-    projects: '../src/tripviewer/**/*.csproj'
+    projects: './src/tripviewer/**/*.csproj'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
     command: build
-    projects: '../src/tripviewer/**/*.csproj'
+    projects: './src/tripviewer/**/*.csproj'
     arguments: '--configuration Release' # Update this to match your need
 
